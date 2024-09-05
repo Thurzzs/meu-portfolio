@@ -1,0 +1,204 @@
+/* Estilo geral do corpo */
+body {
+    background-color: rgb(175, 175, 175);
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    margin: 0;
+  }
+  
+  
+  /* Contêiner de projetos */
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaço entre os projetos */
+    margin-bottom: 20px; /* Espaço entre os projetos e o botão */
+    width: 100%; /* Faz o contêiner ocupar toda a largura disponível */
+    max-width: 1200px; /* Define uma largura máxima para o contêiner */
+  }
+  
+  
+  /* Item do projeto */
+  .project-item {
+    background-color: #fff;
+    padding: 10px;
+    border: 5px solid #fff; /* Moldura branca ao redor da imagem */
+    border-radius: 10px; /* Borda arredondada */
+    overflow: hidden; /* Garante que a imagem não transborde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor da moldura */
+    max-width: 100%; /* Limita a largura máxima do item */
+    max-height: 500px; /* Limita a altura máxima do item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  /* Envolvimento da imagem */
+  .image-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+  }
+  
+  
+  /* Estilo da imagem */
+  .project-item img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    max-height: 250px; /* Ajusta a altura máxima da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem e cobre o contêiner */
+  }
+  
+  
+  /* Descrição do projeto */
+  .project-description {
+    display: block; /* Exibe a descrição por padrão */
+    background-color: #ffffff;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    width: 100%; /* Garante que a descrição ocupe toda a largura do contêiner */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    overflow: auto; /* Adiciona uma barra de rolagem se o conteúdo exceder a altura */
+  }
+  
+  
+  /* Checkbox para alternar a descrição */
+  .toggle-description {
+    display: none; /* Esconde o checkbox */
+  }
+  
+  
+  .toggle-description:checked + label + .project-description {
+    display: block; /* Exibe a descrição quando o checkbox está marcado */
+  }
+  
+  
+  /* Efeito de hover na imagem do projeto */
+  .project-item:hover img {
+    transform: scale(1.05); /* Pequena ampliação ao passar o mouse */
+    opacity: 0.9; /* Reduz a opacidade ao passar o mouse */
+  }
+  
+  
+  .project-description h3 {
+    margin: 0 0 10px;
+  }
+  
+  
+  .project-description p {
+    margin: 0 0 15px;
+  }
+  
+  
+  .project-description a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  
+  .project-description a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Botão "Voltar ao Início" */
+  .back-to-top {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-bottom: 20px; /* Espaço abaixo do botão */
+  }
+  
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .cta-buttons .btn {
+        padding: 8px 16px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        height: 30px;
+    }
+    
+    main {
+        padding: 80px 10px;
+    }
+    
+    .avatar {
+        width: 120px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .cta-buttons .btn {
+        padding: 8px 16px;
+        margin: 4px;
+    }
+    
+    .testimonial {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 25px;
+    }
+    
+    main {
+        padding: 60px 5px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .cta-buttons .btn {
+        padding: 6px 12px;
+        margin: 3px;
+    }
+    
+    .testimonial {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,255 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Introdução Pessoal */
+main {
+    padding: 50px 0;
+}
+
+.intro-photo img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.introduction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.intro-text p {
+    margin: 0 0 20px;
+}
+
+/* Habilidades */
+.skills {
+    margin-bottom: 50px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.skill h3 {
+    margin: 0 0 10px;
+}
+
+.skill-bar {
+    height: 20px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.html-bar {
+    width: 90%;
+    background: #e34f26;
+}
+
+.css-bar {
+    width: 80%;
+    background: #1572b6;
+}
+
+.js-bar {
+    width: 70%;
+    background: #f7e018;
+}
+
+/* Linha do Tempo */
+.timeline {
+    margin-bottom: 50px;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.timeline-content {
+    padding-left: 10px;
+}
+
+.timeline-content h3 {
+    margin: 0;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .cta-buttons .btn {
+        padding: 8px 16px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        height: 30px;
+    }
+    
+    main {
+        padding: 80px 10px;
+    }
+    
+    .avatar {
+        width: 120px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .cta-buttons .btn {
+        padding: 8px 16px;
+        margin: 4px;
+    }
+    
+    .testimonial {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 25px;
+    }
+    
+    main {
+        padding: 60px 5px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .cta-buttons .btn {
+        padding: 6px 12px;
+        margin: 3px;
+    }
+    
+    .testimonial {
+        padding: 15px;
+    }
+}

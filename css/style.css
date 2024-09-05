@@ -1,0 +1,212 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #0018f0;
+    padding: 10px 0;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #0c4dff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Principal */
+main {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+}
+
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons .btn {
+    background: #ffffff;
+    color: #0c38fd;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-buttons .btn:hover {
+    background: #ffffff;
+}
+
+/* Depoimentos */
+.testimonials {
+    background: #000000;
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    max-width: 300px;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .cta-buttons .btn {
+        padding: 8px 16px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        height: 30px;
+    }
+    
+    main {
+        padding: 80px 10px;
+    }
+    
+    .avatar {
+        width: 120px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .cta-buttons .btn {
+        padding: 8px 16px;
+        margin: 4px;
+    }
+    
+    .testimonial {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 25px;
+    }
+    
+    main {
+        padding: 60px 5px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .cta-buttons .btn {
+        padding: 6px 12px;
+        margin: 3px;
+    }
+    
+    .testimonial {
+        padding: 15px;
+    }
+}
